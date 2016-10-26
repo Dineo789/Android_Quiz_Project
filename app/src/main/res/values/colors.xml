@@ -3,8 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="text">#ffffff</color>
+    <color name="textHeading">#ffffff</color>
+    <color name="text">#4e51a6</color>
     <color name="options">#85BB65</color>
     <color name="option_selected">#FF53A1E4</color>
+    <color name="button_pressed">#FF0C1A6B</color>
 
 </resources>

@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:textColor="@color/text"
+        android:textColor="@color/textHeading"
         android:text="Question"
         android:fontFamily="monospace"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:layout_below="@id/txt1"
-        android:textColor="@color/text"
+        android:textColor="@color/textHeading"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
 
         />

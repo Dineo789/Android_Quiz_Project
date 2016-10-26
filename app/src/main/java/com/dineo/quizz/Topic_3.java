@@ -19,8 +19,8 @@ public class Topic_3  extends AppCompatActivity {
     int score = 0;
     int count =0;
     int control = 0;//controls button click
-    //GradientDrawable gd;
-    TextView question_txt,optionA_txt,optionB_txt,optionC_txt,score_txt;
+    int question_num =1;
+    TextView question_txt,optionA_txt,optionB_txt,optionC_txt,score_txt,heading_txt;
     Button submit_btn;
     ImageButton undo_btn;
     //Resources res =getResources();
@@ -29,7 +29,7 @@ public class Topic_3  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.topic_1);
-
+        heading_txt =(TextView)findViewById(R.id.heading);
         question_txt = (TextView)findViewById(R.id.txt2);
         score_txt = (TextView)findViewById(R.id.sxt1);
         score_txt.setVisibility(View.INVISIBLE);
@@ -76,7 +76,7 @@ public class Topic_3  extends AppCompatActivity {
         answers[12]=getResources().getString(R.string.jAnswer_13);
         answers[13]=getResources().getString(R.string.jAnswer_14);
         answers[14]=getResources().getString(R.string.jAnswer_15);
-
+        heading_txt.setText("Question "+question_num);
         question_txt.setText(Questions[0]);
         optionA_txt.setText(answers[0]);
         optionB_txt.setText(answers[1]);
@@ -140,6 +140,7 @@ public class Topic_3  extends AppCompatActivity {
             }
 
             control++;
+            question_num++;
         } else {
             String myScore = score_txt.getText().toString();
             //int ms = Integer.parseInt(myScore);
@@ -148,6 +149,7 @@ public class Topic_3  extends AppCompatActivity {
             startActivity(i);
             //putExtra for data
         }
+        heading_txt.setText("Question "+question_num);
     }
 
 
@@ -220,7 +222,7 @@ public class Topic_3  extends AppCompatActivity {
                 }
                 break;
             case 1:
-                if(v.getId()==optionB_txt.getId()){
+                if(v.getId()==optionA_txt.getId()){
                     score++;
                     score_txt.setText(""+ score);
                 }else
@@ -229,7 +231,7 @@ public class Topic_3  extends AppCompatActivity {
                 }
                 break;
             case 2:
-                if(v.getId()==optionC_txt.getId()){
+                if(v.getId()==optionB_txt.getId()){
                     score++;
                     score_txt.setText(""+ score);
                 }else
@@ -238,7 +240,7 @@ public class Topic_3  extends AppCompatActivity {
                 }
                 break;
             case 3:
-                if(v.getId()==optionA_txt.getId()){
+                if(v.getId()==optionC_txt.getId()){
                     score++;
                     score_txt.setText(""+ score);
                 }else
@@ -247,7 +249,7 @@ public class Topic_3  extends AppCompatActivity {
                 }
                 break;
             case 4:
-                if(v.getId()==optionA_txt.getId()){
+                if(v.getId()==optionB_txt.getId()){
                     score++;
                     score_txt.setText(""+ score);
                 }else

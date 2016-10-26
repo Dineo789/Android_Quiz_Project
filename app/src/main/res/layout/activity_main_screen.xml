@@ -30,9 +30,11 @@
         android:id="@+id/btn_act1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity 1"
+        android:text="Android Studio"
+        android:textColor="@color/textHeading"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         android:onClick="onClick"
-        android:src="@drawable/android"
+        android:textStyle="bold"
         android:layout_margin="6dp"
         android:background="@drawable/options_style"
         android:layout_weight="0.5"/>
@@ -40,21 +42,27 @@
         android:id="@+id/btn_act2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity 2"
+        android:text="XML"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/textHeading"
         android:background="@drawable/options_style"
         android:onClick="onClick"
         android:layout_margin="6dp"
-        android:src="@drawable/xml2"
+
         android:layout_weight="0.5"/>
     <Button
         android:id="@+id/btn_act3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity 3"
+        android:text="Java"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/textHeading"
         android:background="@drawable/options_style"
         android:onClick="onClick"
         android:layout_weight="0.5"
         android:layout_margin="6dp"
-        android:src="@drawable/java"/>
+        />
 
 </LinearLayout>

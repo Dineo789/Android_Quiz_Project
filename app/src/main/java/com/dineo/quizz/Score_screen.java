@@ -21,7 +21,7 @@ public class Score_screen  extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.score_screen);
-        rating =(TextView)findViewById(R.id.test_rating);
+
         score_txt = (TextView)findViewById(R.id.myscore);
         calc_txt = (TextView)findViewById(R.id.calc_txt);
         Intent i = getIntent();
@@ -34,8 +34,7 @@ public class Score_screen  extends AppCompatActivity{
         //Toast.makeText(Score_screen.this,""+score,Toast.LENGTH_LONG).show();
         score_perc  = (score*100)/5;
         score_txt.setVisibility(View.INVISIBLE);
-        rating.setVisibility(View.INVISIBLE);
-       Toast.makeText(Score_screen.this,""+score_perc,Toast.LENGTH_LONG).show();
+
 
 
 
@@ -67,17 +66,17 @@ public class Score_screen  extends AppCompatActivity{
         }).start();
 
         if(score_perc <= 49){
-            rating.setVisibility(View.VISIBLE);
-            rating.setText("Try again");
+
+              Toast.makeText(Score_screen.this,"Try Again",Toast.LENGTH_LONG).show();
         }else if(score_perc==50){
-            rating.setVisibility(View.VISIBLE);
-            rating.setText("Good!");
+
+            Toast.makeText(Score_screen.this,"Good",Toast.LENGTH_LONG).show();
         }else if(score_perc<=60){
-            rating.setVisibility(View.VISIBLE);
-            rating.setText("Very Good!");
+
+            Toast.makeText(Score_screen.this,"Very Good",Toast.LENGTH_LONG).show();
         }else{
-            rating.setVisibility(View.VISIBLE);
-            rating.setText("Excellent!");
+
+            Toast.makeText(Score_screen.this,"Excellent",Toast.LENGTH_LONG).show();
         }
 
 

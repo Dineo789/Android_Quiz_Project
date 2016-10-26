@@ -1,18 +1,20 @@
 <resources>
     <string name="app_name">Android Studio Quiz</string>
-    <string name="aQuestion_1">What is Android Studio?</string>
-    <string name="aQuestion_2">What is an Emulator?</string>
+    <string name="aQuestion_1">Android is a mobile operating system developed by?</string>
+    <string name="aQuestion_2">What is Android Studio?</string>
     <string name="aQuestion_3">What is not included in Android Studio project\n structure app folder?</string>
     <string name="aQuestion_4">Where are errors located at runtime?</string>
     <string name="aQuestion_5">What is the purpose of Android studio manifest file?</string>
 
-        <string name="aAnswer_1">An IDE for android development</string>
-        <string name="aAnswer_2">A studio for android</string>
-        <string name="aAnswer_3">An android Text Editor</string>
 
-        <string name="aAnswer_4">ghgfhg</string>
-        <string name="aAnswer_5">fghfh</string>
-        <string name="aAnswer_6">gfhf</string>
+
+        <string name="aAnswer_1">Yahoo</string>
+        <string name="aAnswer_2">Sumsang</string>
+        <string name="aAnswer_3">Google</string>
+
+        <string name="aAnswer_4">An IDE for android development</string>
+        <string name="aAnswer_5">A studio for android</string>
+        <string name="aAnswer_6">An android Text Editor</string>
 
         <string name="aAnswer_7">Manifest</string>
         <string name="aAnswer_8">Java</string>
@@ -22,9 +24,9 @@
         <string name="aAnswer_11">Android Monitor</string>
         <string name="aAnswer_12">Messages</string>
 
-        <string name="aAnswer_13">ghfh</string>
-        <string name="aAnswer_14">ghhghg</string>
-        <string name="aAnswer_15">fghfhhg</string>
+        <string name="aAnswer_13">To edit java code</string>
+        <string name="aAnswer_14">To provide information to the android system</string>
+        <string name="aAnswer_15">To integrate applications</string>
 
 
 
@@ -40,6 +42,7 @@
     <string name="xAnswer_1">Extended MarkUp Language</string>
     <string name="xAnswer_2">Extensible Markup Language</string>
     <string name="xAnswer_3">Extensive Markup Language</string>
+
     <string name="xAnswer_4">To build layouts</string>
     <string name="xAnswer_5">To create forms</string>
     <string name="xAnswer_6">To connect Java to android studio</string>
@@ -59,7 +62,7 @@
 
     <string name="jQuestion_1">What is the official language used for android development?</string>
     <string name="jQuestion_2">What is JAVA?</string>
-    <string name="jQuestion_3">What is the purpose of Java in android studio?</string>
+    <string name="jQuestion_3">Which java method is first executed when the app is executed?</string>
     <string name="jQuestion_4">How is XML code linked to java code?</string>
     <string name="jQuestion_5">Where in Andriod Studio project structure is Java code written?</string>
 
@@ -71,9 +74,9 @@
     <string name="jAnswer_5">Procedural Programming Language</string>
     <string name="jAnswer_6">Natural Language</string>
 
-    <string name="jAnswer_7">dsfs</string>
-    <string name="jAnswer_8">fdgd</string>
-    <string name="jAnswer_9">dfgdfg</string>
+    <string name="jAnswer_7">onStart()</string>
+    <string name="jAnswer_8">onCreate()</string>
+    <string name="jAnswer_9">onPlay()</string>
 
     <string name="jAnswer_10">Inherit XML to java file</string>
     <string name="jAnswer_11">Import XML class in java file</string>
