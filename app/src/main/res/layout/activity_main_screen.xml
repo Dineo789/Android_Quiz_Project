@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.dineo.quizz.MainScreenActivity"
+    android:weightSum="6">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="6dp"/>
+
+    <Button
+        android:id="@+id/btn_act1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity 1"
+        android:onClick="onClick"
+        android:src="@drawable/android"
+        android:layout_margin="6dp"
+        android:background="@drawable/options_style"
+        android:layout_weight="0.5"/>
+    <Button
+        android:id="@+id/btn_act2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity 2"
+        android:background="@drawable/options_style"
+        android:onClick="onClick"
+        android:layout_margin="6dp"
+        android:src="@drawable/xml2"
+        android:layout_weight="0.5"/>
+    <Button
+        android:id="@+id/btn_act3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity 3"
+        android:background="@drawable/options_style"
+        android:onClick="onClick"
+        android:layout_weight="0.5"
+        android:layout_margin="6dp"
+        android:src="@drawable/java"/>
+
+</LinearLayout>

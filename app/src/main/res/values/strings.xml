@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Android Studio Quiz</string>
+    <string name="aQuestion_1">What is Android Studio?</string>
+    <string name="aQuestion_2">What is an Emulator?</string>
+    <string name="aQuestion_3">What is not included in Android Studio project\n structure app folder?</string>
+    <string name="aQuestion_4">Where are errors located at runtime?</string>
+    <string name="aQuestion_5">What is the purpose of Android studio manifest file?</string>
+
+        <string name="aAnswer_1">An IDE for android development</string>
+        <string name="aAnswer_2">A studio for android</string>
+        <string name="aAnswer_3">An android Text Editor</string>
+
+        <string name="aAnswer_4">ghgfhg</string>
+        <string name="aAnswer_5">fghfh</string>
+        <string name="aAnswer_6">gfhf</string>
+
+        <string name="aAnswer_7">Manifest</string>
+        <string name="aAnswer_8">Java</string>
+        <string name="aAnswer_9">XML</string>
+
+        <string name="aAnswer_10">Event Log</string>
+        <string name="aAnswer_11">Android Monitor</string>
+        <string name="aAnswer_12">Messages</string>
+
+        <string name="aAnswer_13">ghfh</string>
+        <string name="aAnswer_14">ghhghg</string>
+        <string name="aAnswer_15">fghfhhg</string>
+
+
+
+
+    <string name="xQuestion_1">What does XML stand for?</string>
+    <string name="xQuestion_2">What is XML used for in Android studio?</string>
+    <string name="xQuestion_3">When you open an xml layout file,
+        the Design editor opens by default.
+        Where is XML code be edited?</string>
+    <string name="xQuestion_4">Where are XML files located in Android studio project structure?</string>
+    <string name="xQuestion_5">Which file is not included in res directory?</string>
+
+    <string name="xAnswer_1">Extended MarkUp Language</string>
+    <string name="xAnswer_2">Extensible Markup Language</string>
+    <string name="xAnswer_3">Extensive Markup Language</string>
+    <string name="xAnswer_4">To build layouts</string>
+    <string name="xAnswer_5">To create forms</string>
+    <string name="xAnswer_6">To connect Java to android studio</string>
+
+    <string name="xAnswer_7">Editor File</string>
+    <string name="xAnswer_8">Text Editor</string>
+    <string name="xAnswer_9">Note Editor</string>
+
+    <string name="xAnswer_10">Java directory</string>
+    <string name="xAnswer_11">Res directory</string>
+    <string name="xAnswer_12">Manifest directory</string>
+
+    <string name="xAnswer_13">drawable</string>
+    <string name="xAnswer_14">values</string>
+    <string name="xAnswer_15">mipmep</string>
+
+
+    <string name="jQuestion_1">What is the official language used for android development?</string>
+    <string name="jQuestion_2">What is JAVA?</string>
+    <string name="jQuestion_3">What is the purpose of Java in android studio?</string>
+    <string name="jQuestion_4">How is XML code linked to java code?</string>
+    <string name="jQuestion_5">Where in Andriod Studio project structure is Java code written?</string>
+
+    <string name="jAnswer_1">Java</string>
+    <string name="jAnswer_2">C++</string>
+    <string name="jAnswer_3">XML</string>
+
+    <string name="jAnswer_4">Object Oriented Programming Language</string>
+    <string name="jAnswer_5">Procedural Programming Language</string>
+    <string name="jAnswer_6">Natural Language</string>
+
+    <string name="jAnswer_7">dsfs</string>
+    <string name="jAnswer_8">fdgd</string>
+    <string name="jAnswer_9">dfgdfg</string>
+
+    <string name="jAnswer_10">Inherit XML to java file</string>
+    <string name="jAnswer_11">Import XML class in java file</string>
+    <string name="jAnswer_12">Link java object to reference the\n res directory</string>
+
+    <string name="jAnswer_13">Manifest Directory</string>
+    <string name="jAnswer_14">Java Directory</string>
+    <string name="jAnswer_15">Res Directory</string>
+
+
+
+
+
+</resources>
