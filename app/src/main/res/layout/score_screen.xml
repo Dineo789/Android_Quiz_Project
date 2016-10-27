@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="2"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="2">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score"
-        android:layout_weight="0.5"
-        android:textSize="100dp"
-        android:textColor="@color/textHeading"
-
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        />
+        android:layout_weight="0.5"
+        android:text="Score"
+
+        android:textColor="@color/textHeading"
+        android:textSize="100dp" />
+
     <TextView
         android:id="@+id/calc_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Calculating..."/>
+        android:text="Calculating..." />
+
     <TextView
+        android:id="@+id/myscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/myscore"
-        android:text="0"
-        android:textSize="180dp"
-        android:gravity="center"
         android:layout_centerInParent="true"
         android:layout_weight="1.5"
-        />
+        android:gravity="center"
+        android:text="0"
+        android:textSize="180dp" />
 
 
 </RelativeLayout>
