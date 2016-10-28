@@ -2,6 +2,7 @@ package com.dineo.quizz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -26,6 +27,13 @@ public class Score_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.score_screen);
+
+        myToolBar = (Toolbar) findViewById(R.id.my_toolbar);
+
+        setSupportActionBar(myToolBar);
+
+        // Get a support ActionBar corresponding to this toolbar
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         score_txt = (TextView) findViewById(R.id.myscore);
         calc_txt = (TextView) findViewById(R.id.calc_txt);
@@ -79,13 +87,14 @@ public class Score_screen extends AppCompatActivity {
 
             Toast.makeText(Score_screen.this, "Excellent", Toast.LENGTH_LONG).show();
         }
-        myToolBar();
+        //myToolBar();
 
 
 
 
     }
-    public void myToolBar(){
+
+    /*public void myToolBar(){
         myToolBar = (Toolbar)findViewById(R.id.my_toolbar);
 
         myToolBar.setNavigationIcon(R.drawable.ic_arrow_back);
@@ -102,12 +111,13 @@ public class Score_screen extends AppCompatActivity {
                 Toast.makeText(Score_screen.this,"Back was pressed",Toast.LENGTH_SHORT).show();
 
                 myToolBar.setVisibility(View.GONE);
+                onBackPressed();
             }
         });
 
 
     }
-
+     */
 
     /*public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -117,4 +127,15 @@ public class Score_screen extends AppCompatActivity {
                 return true;
         }
     }*/
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

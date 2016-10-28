@@ -17,15 +17,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainScreenActivity"></activity>
-        <activity android:name=".Topic_1"></activity>
-        <activity android:name=".Topic_2"></activity>
-        <activity android:name=".Topic_3"></activity>
+        <activity android:name=".MainScreenActivity">
+        </activity>
+        <activity android:name=".Topic_1"
+            android:parentActivityName=".MainScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dineo.quizz.MainScreenActivity"/>
+        </activity>
+        <activity android:name=".Topic_2"
+            android:parentActivityName=".MainScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dineo.quizz.MainScreenActivity"/>
+        </activity>
+        <activity android:name=".Topic_3"
+            android:parentActivityName=".MainScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dineo.quizz.MainScreenActivity"/>
+        </activity>
         <activity android:name=".Score_screen"
             android:parentActivityName=".MainScreenActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dineo.quizz.MainScreenActivity"/>
-
 
         </activity>
     </application>
