@@ -3,6 +3,8 @@ package com.dineo.quizz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,9 +16,11 @@ import android.widget.Toast;
 public class Score_screen extends AppCompatActivity {
 
     TextView score_txt, rating, calc_txt;
+    Toolbar myToolBar;
     int startScore = 0;
     int score_perc;
     int score;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,7 @@ public class Score_screen extends AppCompatActivity {
 
         score_txt = (TextView) findViewById(R.id.myscore);
         calc_txt = (TextView) findViewById(R.id.calc_txt);
+
         Intent i = getIntent();
         String score_str = i.getStringExtra("USER_SCORE");
         // int score_str = i.getIntExtra("USER_SCORE");
@@ -74,8 +79,42 @@ public class Score_screen extends AppCompatActivity {
 
             Toast.makeText(Score_screen.this, "Excellent", Toast.LENGTH_LONG).show();
         }
+        myToolBar();
+
+
+
+
+    }
+    public void myToolBar(){
+        myToolBar = (Toolbar)findViewById(R.id.my_toolbar);
+
+        myToolBar.setNavigationIcon(R.drawable.ic_arrow_back);
+        myToolBar.setNavigationContentDescription(getResources()
+                .getString(R.string.navigation_icon_description));
+        setSupportActionBar(myToolBar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        myToolBar.setTitle("");
+
+        myToolBar.setNavigationOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Toast.makeText(Score_screen.this,"Back was pressed",Toast.LENGTH_SHORT).show();
+
+                myToolBar.setVisibility(View.GONE);
+            }
+        });
 
 
     }
 
+
+    /*public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+               // myToolBar.navigateUpFromSameTask(this);
+                return true;
+        }
+    }*/
 }

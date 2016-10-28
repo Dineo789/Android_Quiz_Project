@@ -8,17 +8,26 @@
         android:supportsRtl="true"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainScreenActivity">
+        <activity android:name=".splash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainScreenActivity"></activity>
         <activity android:name=".Topic_1"></activity>
         <activity android:name=".Topic_2"></activity>
         <activity android:name=".Topic_3"></activity>
-        <activity android:name=".Score_screen"></activity>
+        <activity android:name=".Score_screen"
+            android:parentActivityName=".MainScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dineo.quizz.MainScreenActivity"/>
+
+
+        </activity>
     </application>
 
 </manifest>

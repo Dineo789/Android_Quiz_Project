@@ -5,6 +5,11 @@
     android:background="@drawable/background"
     android:orientation="vertical"
     android:weightSum="2">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        </android.support.v7.widget.Toolbar>
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,6 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
+        android:layout_below="@id/my_toolbar"
         android:text="Score"
 
         android:textColor="@color/textHeading"

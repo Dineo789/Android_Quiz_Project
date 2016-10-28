@@ -1,4 +1,7 @@
 <resources>
+
+    <string name="navigation_icon_description">Go back to homepage</string>
+
     <string name="app_name">Android Studio Quiz</string>
     <string name="aQuestion_1">Android is a mobile operating system developed by?</string>
     <string name="aQuestion_2">What is Android Studio?</string>
