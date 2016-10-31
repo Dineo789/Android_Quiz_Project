@@ -173,6 +173,7 @@ public class Topic_3 extends AppCompatActivity {
     }
 
     public void undo(View v) {
+        score -= 1;
         submit_btn.setEnabled(false);
         undo_btn.setVisibility(View.INVISIBLE);
         optionA_txt.setClickable(true);
